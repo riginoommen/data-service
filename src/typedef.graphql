@@ -1,0 +1,26 @@
+type DataType {
+  message: String
+}
+
+input DataInput {
+  message: String
+}
+
+type Query {
+  # Query Definitions
+  list: [DataType]
+  get(id: String!): DataType
+}
+
+type Mutation {
+  # Mutation Definitions
+  create(input: DataInput): DataType
+  update(input: DataInput): DataType
+  delete(id: String!): DataType
+}
+
+type Subscription {
+  add: DataType
+  modify: DataType
+  remove: DataType
+}

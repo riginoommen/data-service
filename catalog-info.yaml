@@ -1,0 +1,10 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: data-service
+  annotations:
+    github.com/project-slug: riginoommen/data-service
+spec:
+  type: other
+  lifecycle: unknown
+  owner: redhat/3scale-qe
